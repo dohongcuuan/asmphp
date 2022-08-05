@@ -101,7 +101,7 @@
     </button>
     <ul class="admin-menu">
       <li class="menu-heading">
-        <h3>Trang chủ</h3>
+      <a href="index.php"><h3>Trang chủ</h3></a>
       </li>
       <li>
         <a href="admin.php">
