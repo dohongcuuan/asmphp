@@ -25,12 +25,12 @@
     <div class="shadow-xl">
         <div class="flex space-x-9 justify-center items-center pt-4">
             <div>
-                <a href="index.html"> <img src="img/31.png" alt="" class="w-[60px] md:w-[90px]"></a>
+                <a href="index.php"> <img src="img/31.png" alt="" class="w-[60px] md:w-[90px]"></a>
             </div>
             <ul class="flex space-x-4 font-bold">
-                <li class="p-4 hover:text-fuchsia-600"><a href="index.html">Trang chủ</a>
+                <li class="p-4 hover:text-fuchsia-600"><a href="index.php">Trang chủ</a>
                 </li>
-                <li class="p-4 hover:text-fuchsia-600"><a href="thongbao.html">Blog</a></li>
+                <li class="p-4 hover:text-fuchsia-600"><a href="thongbao.php">Blog</a></li>
                 <li class="p-4 hover:text-fuchsia-600"><a href="">Cửa hàng</a></li>
                 <!-- <li class="p-4 hover:text-fuchsia-600"><a href=""></a></li> -->
                 <li class="p-4 hover:text-fuchsia-600"><a href="">Liên hệ</a></li>
