@@ -35,12 +35,11 @@
       </div>
       <button id="btn" class="text-2xl text-white md:hidden block"><i class='bx bx-menu'></i></button>
       <ul id="menu" class="md:flex text-white md:space-x-4 font-bold  md:block hidden   ">
-        <li class="p-4 hover:text-fuchsia-600"><a href="index.html">Trang chủ</a></li>
-        <li class="p-4 hover:text-fuchsia-600"><a href="thongbao.html">Thông báo</a></li>
+        <li class="p-4 hover:text-fuchsia-600"><a href="index.php">Trang chủ</a></li>
+        <li class="p-4 hover:text-fuchsia-600"><a href="thongbao.php">Blog</a></li>
         <li class="p-4 hover:text-fuchsia-600"><a href="">Cửa hàng</a></li>
-        <!-- <li class="p-4 hover:text-fuchsia-600"><a href=""></a></li> -->
         <li class="p-4 hover:text-fuchsia-600"><a href="">Liên hệ</a></li>
-        <li class="p-4 hover:text-fuchsia-600"><a href="">Đăng nhập</a></li>
+        <li class="p-4 hover:text-fuchsia-600"><a href="dangnhap.php">Đăng nhập/Đăng ký </a></li>
 
       </ul>
 
@@ -80,52 +79,29 @@
     <div id="main" class="bg-white mt-8 shadow-2xl  ">
       <h5 class="text-center text-4xl font-bold"> Bán Chạy Nhất</h5>
       <div class="flex justify-around pt-4">
-        <div class="text-center">
-          <a href="chitietsanpham1.html"><img
-              class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 h-[300px] w-[235px] "
-              src="img/6.jpg" alt="">
+        <?php
+				include 'db.php';
+				$sql = "select * from producd";
+				$result = $conn->query($sql);
+				foreach ($result as $row){		
+		?>
+        
+		<div class="text-center">
+			<a href="chitietsanpham1.php"><img class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 h-[300px]  w-[235px] " src="img/<?php echo $row['img'] ?>"/></a>
+			<a href="" class="hover:text-fuchsia-600"><?php echo $row['name_pro']   ?></a>
+			<div class="text-rose-700" ><?php echo $row['price']  ?></a></div>
+			
+		</div>
+		
+		<?php  
+				} 	
+		?>
 
-          </a>
+        
 
-          <div class="pt-4">
-            <span class="hover:text-fuchsia-600">Bộ Ghép Hình Mixi-Mixi Block SS3 </span>
-            <p class="text-rose-700">370,000đ</p>
-          </div>
-
-        </div>
-        <div class="text-center">
-          <a href="#"> <img
-              class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 h-[300px] w-[235px] "
-              src="img/17.jpg" alt=""></a>
-
-          <div class="pt-4">
-            <span class="hover:text-fuchsia-600">Bộ Ghép Hình Mixi-Mixi Block SS1</span>
-            <p class="text-rose-700">350,000đ</p>
-          </div>
-
-        </div>
-        <div class="text-center">
-          <a href="#"><img
-              class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 h-[300px] w-[200px] "
-              src="img/20.jpg"></a>
-
-          <div class="pt-4">
-            <span class="hover:text-fuchsia-600">Bộ Ghép Hình Mixi-Mixi Block SS2</span>
-            <p class="text-rose-700">350,000đ</p>
-          </div>
-
-        </div>
-        <div class="text-center">
-          <a href="#"> <img
-              class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 h-[300px]  w-[235px] "
-              src="img/8.jpg" alt=""></a>
-
-          <div class="pt-4">
-            <span class="hover:text-fuchsia-600">Áo 3 Lỗ Mixi</span>
-            <p class="text-rose-700">150,000đ</p>
-          </div>
-
-        </div>
+        
+        
+        
 
       </div>
     </div>
@@ -253,7 +229,7 @@
         <div class="w-[1243px] h-[481px]  m-auto">
           <div class="grid grid-cols-4 gap-8 pt-16 p-4">
             <div class="">
-              <a href="xoai.html"> <img
+              <a href=""> <img
                   class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 "
                   src="img/7.jpg" alt=""></a>
 
@@ -265,7 +241,7 @@
 
             </div>
             <div>
-              <a href="bo.html"><img
+              <a href=""><img
                   class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700 h-[363]"
                   src="img/26.jpg" alt=""></a>
 
@@ -277,7 +253,7 @@
 
             </div>
             <div>
-              <a href="ca.html"><img
+              <a href=""><img
                   class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
                   src="img/18.jpg" alt=""></a>
 
@@ -289,7 +265,7 @@
 
             </div>
             <div class="">
-              <a href="cam.html"> <img
+              <a href=""> <img
                   class="transition ease-in-out delay-150  hover:-translate-1 hover:scale-110 duration-700"
                   src="img/24.jpg" alt=""></a>
 
@@ -299,7 +275,10 @@
               </div>
 
             </div>
+
+
           </div>
+
         </div>
 
       </div>

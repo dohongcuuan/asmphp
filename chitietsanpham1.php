@@ -24,7 +24,7 @@
                 <ul class="flex space-x-4 font-bold">
                         <li class="p-4 hover:text-fuchsia-600"><a href="index.html">Trang chủ</a>
                         </li>
-                        <li class="p-4 hover:text-fuchsia-600"><a href="thongbao.html">Thông báo</a></li>
+                        <li class="p-4 hover:text-fuchsia-600"><a href="thongbao.html">Blog</a></li>
                         <li class="p-4 hover:text-fuchsia-600"><a href="">Cửa hàng</a></li>
                         <!-- <li class="p-4 hover:text-fuchsia-600"><a href=""></a></li> -->
                         <li class="p-4 hover:text-fuchsia-600"><a href="">Liên hệ</a></li>
